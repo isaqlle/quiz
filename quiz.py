@@ -65,7 +65,7 @@ tela_cheia = False
 premios = [
     "Prêmio Surpresa 1", "Vale-Brinde Especial", "Kit de Estudos",
     "Camiseta Exclusiva", "Troféu Simbólico", "Caderno Personalizado",
-    "Caneta Especial SESI", "Mochila Exclusiva", "Squeeze Térmica",
+    "Caneta Especial SESI/SENAI", "Mochila Exclusiva", "Squeeze Térmica",
     "Fone de Ouvido", "Power Bank", "Kit Robótica",
     "Ingresso de Evento", "Super Prêmio Especial"
 ]
@@ -77,10 +77,153 @@ roleta_tempo_acumulado = 0.0
 roleta_velocidade_parada = 0.4
 
 # ============================================================
-# BANCO DE PERGUNTAS
+# BANCO DE PERGUNTAS (COMPLETO: SENAI + SESI + CONHECIMENTOS)
 # ============================================================
 
 banco_perguntas = [
+    # --- QUESTÕES SENAI ---
+    {
+        "pergunta": "O que significa a sigla SENAI?",
+        "opcoes": [
+            "Serviço Nacional de Aprendizagem Industrial",
+            "Serviço Nacional de Apoio Industrial",
+            "Sistema Nacional da Indústria",
+            "Serviço Nacional de Aprendizagem Integrada"
+        ],
+        "correta": 0
+    },
+    {
+        "pergunta": "Qual é o principal objetivo do SENAI?",
+        "opcoes": [
+            "Formar atletas",
+            "Promover educação profissional e tecnológica",
+            "Fiscalizar empresas",
+            "Realizar concursos públicos"
+        ],
+        "correta": 1
+    },
+    {
+        "pergunta": "Em que ano o SENAI foi criado?",
+        "opcoes": ["1930", "1950", "1942", "1964"],
+        "correta": 2
+    },
+    {
+        "pergunta": "Qual instituição administra o SENAI Goiás?",
+        "opcoes": ["Sebrae", "SENAC", "Prefeitura Municipal", "FIEG"],
+        "correta": 3
+    },
+    {
+        "pergunta": "O SENAI oferece apenas cursos presenciais?",
+        "opcoes": ["Sim", "Não", "Apenas aos sábados", "Apenas cursos online"],
+        "correta": 1
+    },
+    {
+        "pergunta": "O que significa EAD?",
+        "opcoes": [
+            "Ensino Aberto Digital",
+            "Educação Avançada Digital",
+            "Educação a Distância",
+            "Ensino de Alta Direção"
+        ],
+        "correta": 2
+    },
+    {
+        "pergunta": "Qual é a cor predominante da marca SENAI?",
+        "opcoes": ["Vermelho", "Verde", "Azul", "Amarelo"],
+        "correta": 2
+    },
+    {
+        "pergunta": "Qual é o foco principal dos cursos do SENAI?",
+        "opcoes": [
+            "Preparar profissionais para o mercado de trabalho",
+            "Formar atletas",
+            "Ensinar idiomas exclusivamente",
+            "Realizar pesquisas eleitorais"
+        ],
+        "correta": 0
+    },
+    {
+        "pergunta": "O que significa a sigla EPI?",
+        "opcoes": [
+            "Equipamento de Produção Industrial",
+            "Equipamento de Proteção Individual",
+            "Escola Profissional Industrial",
+            "Equipamento Profissional Integrado"
+        ],
+        "correta": 1
+    },
+    {
+        "pergunta": "O SENAI é reconhecido principalmente por:",
+        "opcoes": [
+            "Formação profissional de qualidade",
+            "Administração de rodovias",
+            "Transporte de cargas",
+            "Construção civil"
+        ],
+        "correta": 0
+    },
+    {
+        "pergunta": "Em qual cidade está localizada a Unidade SENAI Otávio Lage de Siqueira Filho?",
+        "opcoes": ["Goiânia", "Jaraguá", "Goianésia", "Anápolis"],
+        "correta": 2
+    },
+    {
+        "pergunta": "O SENAI Goianésia oferece:",
+        "opcoes": [
+            "Apenas cursos de informática",
+            "Apenas graduação",
+            "Qualificação, técnico e aprendizagem",
+            "Apenas pós-graduação"
+        ],
+        "correta": 2
+    },
+    {
+        "pergunta": "Uma das principais vantagens de estudar no SENAI Goianésia é:",
+        "opcoes": [
+            "Ensino alinhado às necessidades das empresas",
+            "Aulas apenas aos domingos",
+            "Ausência de avaliações",
+            "Ensino exclusivamente teórico"
+        ],
+        "correta": 0
+    },
+    {
+        "pergunta": "O SENAI Goianésia realiza parcerias com empresas da região?",
+        "opcoes": ["Não", "Apenas em anos pares", "Sim", "Apenas empresas internacionais"],
+        "correta": 2
+    },
+    {
+        "pergunta": "Qual é a importância do SENAI para o desenvolvimento regional?",
+        "opcoes": [
+            "Formar mão de obra qualificada",
+            "Administrar municípios",
+            "Fiscalizar escolas",
+            "Construir rodovias"
+        ],
+        "correta": 0
+    },
+    {
+        "pergunta": "Por que o SENAI é considerado uma das maiores instituições do Brasil?",
+        "opcoes": [
+            "Pela quantidade de estádios que possui",
+            "Pela qualidade do ensino e abrangência nacional",
+            "Pela atuação política",
+            "Pela fabricação de máquinas"
+        ],
+        "correta": 1
+    },
+    {
+        "pergunta": "Por que o SENAI Goianésia é referência na formação profissional?",
+        "opcoes": [
+            "Porque oferece apenas cursos gratuitos",
+            "Porque atende somente empresas industriais",
+            "Porque alia qualidade, estrutura e proximidade com a indústria",
+            "Porque atua apenas em Goianésia"
+        ],
+        "correta": 2
+    },
+
+    # --- QUESTÕES SESI ---
     {
         "pergunta": "O que significa a sigla SESI?",
         "opcoes": [
@@ -223,14 +366,11 @@ banco_perguntas = [
     },
     {
         "pergunta": "Complete a frase da nossa campanha: “O futuro começa com boas...”",
-        "opcoes": [
-            "Provas",
-            "Escolhas",
-            "Tarefas",
-            "Notas"
-        ],
+        "opcoes": ["Provas", "Escolhas", "Tarefas", "Notas"],
         "correta": 1
     },
+
+    # --- QUESTÕES GERAIS E REGIONAIS ---
     {
         "pergunta": "Qual é a capital do Brasil?",
         "opcoes": ["São Paulo", "Brasília", "Rio de Janeiro", "Belo Horizonte"],
@@ -476,7 +616,7 @@ def desenhar_quiz():
     # Caixa da Pergunta
     caixa_pergunta = Rect((210, 260), (1500, 120))
     desenhar_card(caixa_pergunta, COR_PAINEL, cor_borda=COR_DOURADO, raio=24)
-    screen.draw.text(dados_pergunta["pergunta"], center=caixa_pergunta.center, fontsize=38, color=COR_TEXTO)
+    screen.draw.text(dados_pergunta["pergunta"], center=caixa_pergunta.center, fontsize=36, color=COR_TEXTO)
 
     correta = dados_pergunta["correta"]
 
@@ -495,7 +635,7 @@ def desenhar_quiz():
 
         desenhar_card(caixa, cor_fundo, cor_borda=cor_borda, raio=20)
         texto_opcao = f"{chr(65 + i)}) {dados_pergunta['opcoes'][i]}"
-        screen.draw.text(texto_opcao, midleft=(caixa.x + 40, caixa.centery), fontsize=32, color=COR_TEXTO)
+        screen.draw.text(texto_opcao, midleft=(caixa.x + 40, caixa.centery), fontsize=30, color=COR_TEXTO)
 
 def desenhar_fim():
     screen.fill(COR_BG)
